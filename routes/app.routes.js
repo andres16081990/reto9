@@ -33,8 +33,6 @@ router.get('/', async (req,res)=>{
 
 const visitors = await Visitors.find();
 res.status(200).render('index',({visitors}))
-console.log(visitors);
-
 })
 
 module.exports = router;
