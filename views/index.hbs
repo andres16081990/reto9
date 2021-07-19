@@ -8,9 +8,17 @@
     <td>
       {{#each visitors as |value key|}}
       {{_id}} 
-      {{name}} 
-      {{count}}
       {{/each}}
     </td>
+    <td>
+      {{#each visitors as |value key|}}
+      {{name}}
+      {{/each}}
+    </td>
+    <td>
+      {{#each visitors as |value key|}}
+      {{count}}
+      {{/each}}
+    </td>         
   </tbody>
 </table>
