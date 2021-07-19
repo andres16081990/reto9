@@ -5,11 +5,12 @@
       <th>Visits</th>
   </thead>
   <tbody>
-{{#each visitors as |value key|}}
-    <td>{{_id}} 
+    <td>
+      {{#each visitors as |value key|}}
+      {{_id}} 
       {{name}} 
-       </td>   
-      <td>{{count}}
-{{/each}}
+      {{count}}
+      {{/each}}
+    </td>
   </tbody>
 </table>
