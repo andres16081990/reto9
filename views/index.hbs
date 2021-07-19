@@ -6,18 +6,18 @@
   </thead>
   <tbody>
     <td>
-      {{#each visitors as |value key|}}
-      {{_id}} 
+      {{#each visitors}}
+      {{this._id}} 
       {{/each}}
     </td>
     <td>
-      {{#each visitors as |value key|}}
-      {{name}}
+      {{#each visitors}}
+      {{this.name}}
       {{/each}}
     </td>
     <td>
-      {{#each visitors as |value key|}}
-      {{count}}
+      {{#each visitors}}
+      {{this.count}}
       {{/each}}
     </td>         
   </tbody>
