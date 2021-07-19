@@ -6,18 +6,20 @@
       <th>Visits</th>
     </tr>
   </thead>
+  
   <tbody>
+    {{#each visitors}}
     <tr>
-      <td>{{#each visitors}}{{this._id}}{{/each}}</td>
+      <td>{{this._id}}</td>
     
     
-      <td>{{#each visitors}}{{this.name}}{{/each}}</td>
+      <td>{{this.name}}</td>
     
     
-      <td>{{#each visitors}}{{this.count}}{{/each}}</td>
+      <td>{{this.count}}</td>
 
     </tr>
     
-    
+    {{/each}}
   </tbody>
 </table>
