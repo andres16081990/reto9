@@ -1,18 +1,18 @@
 <table class="table">
   <thead>
-
       <th scope="col">Id</th>
       <th scope="col">name</th>
       <th scope="col">Visits</th>
-
   </thead>
   <tbody>
-    {{#each visitors}}
-    <tr>
-      <td>{{this._id}}</td>
-      <td>{{this.name}}</td>
-      <td>{{this.count}}</td>
-    </tr>
-    {{/each}}
+    
+      <td>{{#each visitors}}{{this._id}}{{/each}}</td>
+    
+    
+      <td>{{#each visitors}}{{this.name}}{{/each}}</td>
+    
+    
+      <td>{{#each visitors}}{{this.count}}{{/each}}</td>
+    
   </tbody>
 </table>

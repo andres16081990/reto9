@@ -6,13 +6,13 @@ const Visitors = require('../models/Visitors.model')
 
 router.get('/', async (req,res)=>{        
     try {
-        if(req.query.name === 'Anónimo' || req.query.name === ''|| req.query.name === undefined){                        
+        if(req.query.name === 'Anónimo' || req.query.name === ''|| req.query.name === undefined ){                        
             const visitor = new Visitors(req.query);            
             visitor.name = 'Anónimo';
             visitor.count = 1;
             await visitor.save();
         }
-        if(req.query.name !== ''){
+        else{
             const existstVisitor = await Visitors.findOne({name : req.query.name})
             
             if(existstVisitor){
