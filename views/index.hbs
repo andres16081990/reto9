@@ -1,10 +1,13 @@
 {{#each visitors as |value key|}}
 <table>
-<thead>ID Name count</thead>
-<tr>
+  <thead>
+
+<th>id</th>
+<th>name</th>
+<th>visits</th>
+  </thead>
       <td>{{_id}}</td>
       <td>{{name}}</td>
       <td>{{count}}</td>
-</tr>
 </table>
 {{/each}}
